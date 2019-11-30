@@ -49,5 +49,14 @@ namespace Hut8BookRegistration
         public DateTime RegDate { get; set; }
 
         #endregion
+
+        /// <summary>
+        /// Override inherited ToString() to provide specific information
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"ISBN: {ISBN}, CID: {CustomerId}, Date: {RegDate}";
+        }
     }
 }

@@ -38,7 +38,7 @@ namespace Hut8BookRegistration
                 Book tempBook = new Book();
                 //object.item = (cast)rdr["column"];
                 tempBook.ISBN = (string)rdr["ISBN"];
-                //tempBook.Price = (decimal)rdr["Price"];
+                tempBook.Price = (decimal)rdr["Price"];
                 tempBook.Title = (string)rdr["Title"];
                 books.Add(tempBook);
             }
@@ -47,6 +47,38 @@ namespace Hut8BookRegistration
             con.Close();
             return books;
             //throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Adds a single book to the database
+        /// </summary>
+        /// <exception cref="SqlException">There was a problem connecting to the database</exception>
+        /// <param name="b"></param>
+        public static void Add(Book b)
+        {
+            SqlConnection con = HbrDBHelper.GetConnection();
+
+            SqlCommand addCmd = new SqlCommand();
+            addCmd.Connection = con;
+            addCmd.CommandText = "insert into Book (ISBN, Price, Title) " +
+                                 "values (@bookID, @bookPrice, @bookTitle)";
+            addCmd.Parameters.AddWithValue("@bookID", b.ISBN);
+            addCmd.Parameters.AddWithValue("@bookPrice", b.Price);
+            addCmd.Parameters.AddWithValue("@bookTitle", b.Title);
+
+            try
+            {
+                con.Open();
+                int rows = addCmd.ExecuteNonQuery();
+                if (rows == 0)
+                {
+                    throw new Exception("No book was added");
+                }
+            }
+            finally
+            {
+                con.Dispose();
+            }
         }
     }
 }

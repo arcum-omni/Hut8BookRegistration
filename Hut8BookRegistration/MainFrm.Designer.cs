@@ -105,6 +105,7 @@
             this.addCustomerBtn.TabIndex = 2;
             this.addCustomerBtn.Text = "Add Customer";
             this.addCustomerBtn.UseVisualStyleBackColor = true;
+            this.addCustomerBtn.Click += new System.EventHandler(this.addCustomerBtn_Click);
             // 
             // addBookBtn
             // 
@@ -115,6 +116,7 @@
             this.addBookBtn.TabIndex = 5;
             this.addBookBtn.Text = "Add Book";
             this.addBookBtn.UseVisualStyleBackColor = true;
+            this.addBookBtn.Click += new System.EventHandler(this.addBookBtn_Click);
             // 
             // registerBookBtn
             // 
@@ -125,6 +127,7 @@
             this.registerBookBtn.TabIndex = 8;
             this.registerBookBtn.Text = "Register Book";
             this.registerBookBtn.UseVisualStyleBackColor = true;
+            this.registerBookBtn.Click += new System.EventHandler(this.registerBookBtn_Click);
             // 
             // MainFrm
             // 
@@ -142,7 +145,7 @@
             this.Controls.Add(this.allCustomersCbo);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainFrm";
-            this.Text = "Hut8 Book Registration";
+            this.Text = "Hut8, Book Registration";
             this.Load += new System.EventHandler(this.MainFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

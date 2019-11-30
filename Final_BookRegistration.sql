@@ -36,6 +36,12 @@ GO
 INSERT INTO Book (ISBN, Price, Title)
 	VALUES ('1234567890ABC', 9.99, 'Intro to databases')
 		,('IEHBMEIUS1234', 12.35, 'Learning Programming')
+		--,('9780143039433', 12.94, 'The Grapes of Wrath')
+		--,('9780399501487', 5.99, 'Lord of the Flies')
+		--,('9780451524935', 793.44, 'nineteen eight-four (1984)')
+		--,('9780679420392', 10.54, 'Animal Farm')
+		--,('9781451673319', 8.29, 'Fahrenheit 451')
+		
 
 CREATE TABLE Registration
 (
@@ -46,5 +52,5 @@ CREATE TABLE Registration
 )
 
 INSERT INTO Registration (CustomerID, ISBN, RegDate)
-	VALUES(3, 'IEHBMEIUS1234', GETDATE())
+	VALUES(3, 'IEHBMEIUS1234', GETDATE() - 1)
 		,(2, '1234567890ABC', GETDATE() - 7)

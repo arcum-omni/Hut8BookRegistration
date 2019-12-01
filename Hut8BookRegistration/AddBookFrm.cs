@@ -38,7 +38,7 @@ namespace Hut8BookRegistration
 
             try
             {
-                BookDB.Add(b);
+                BookDB.AddBook(b);
                 DialogResult = DialogResult.OK;
             }
             catch (SqlException)

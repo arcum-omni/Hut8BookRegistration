@@ -43,6 +43,8 @@ INSERT INTO Book (ISBN, Price, Title)
 		--,('9781451673319', 8.29, 'Fahrenheit 451')
 		
 
+drop table if exists Registration
+
 CREATE TABLE Registration
 (
 	CustomerID	int	REFERENCES Customer(CustomerID)

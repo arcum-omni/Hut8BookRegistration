@@ -54,7 +54,7 @@ namespace Hut8BookRegistration
         /// </summary>
         /// <exception cref="SqlException">There was a problem connecting to the database</exception>
         /// <param name="b"></param>
-        public static void Add(Book b)
+        public static void AddBook(Book b)
         {
             SqlConnection con = HbrDBHelper.GetConnection();
 

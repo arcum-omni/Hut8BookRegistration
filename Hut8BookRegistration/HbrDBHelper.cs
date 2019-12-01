@@ -12,6 +12,10 @@ namespace Hut8BookRegistration
     /// </summary>
     static class HbrDBHelper
     {
+        /// <summary>
+        /// Establish SQL Database Connection
+        /// </summary>
+        /// <returns></returns>
         public static SqlConnection GetConnection()
         {
             // Default DB Connection

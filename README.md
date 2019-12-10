@@ -4,7 +4,7 @@ Due Date: Dec 10, 2019<br><br>
 **Instructions:**<br>
 You are tasked with creating an application for customers to register books.<br><br>
 
-**Operation**<br>
+**Operation:**<br>
 * The user selects a Customer name and Book title from the combo boxes, enters a date in the
 text box, and clicks the Register Book button to add a new row to the Registrations table.<br>
 *  After the user registers a product or clicks the Cancel button to cancel the add operation, the

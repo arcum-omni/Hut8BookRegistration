@@ -1,7 +1,8 @@
-# CPW116 Fall 2019 (dot)NET Final Project ***Hut8BookRegistration.sln***
+# CPW116 Fall 2019 (dot)NET Final Project
 Due Date: Dec 10, 2019<br><br>
 
-**Instructions:** You are tasked with creating an application for customers to register books.<br><br>
+**Instructions:**<br>
+You are tasked with creating an application for customers to register books.<br><br>
 
 **Operation**<br>
 * The user selects a Customer name and Book title from the combo boxes, enters a date in the

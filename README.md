@@ -17,18 +17,11 @@ method in the BookRegistrationDB class should accept a Registration object and r
 that indicates if the operation was successful. Use the value that’s returned by the RegisterBook method
 to display a message indicating the result of the operation.<br><br>
 
-Once you have those steps completed you will need to add a couple additional things.
-• Add a new form to add a customer to the database
-• Add a button on the main form to open the add customer form
-• Add a new method in the CustomerDB class to insert a customer into the database
-• Add a new form to add a Book to the database
-• Add a button on the main form to open the add book form
-• Add a method in the BookDB class to insert a product into the database
-• Refresh the customer/book lists when a new item is added to the database
-
-
-
-
-
-
-
+Once you have those steps completed you will need to add a couple additional things.<br>
+* Add a new form to add a customer to the database<br>
+* Add a button on the main form to open the add customer form<br>
+* Add a new method in the CustomerDB class to insert a customer into the database<br>
+* Add a new form to add a Book to the database<br>
+* Add a button on the main form to open the add book form<br>
+* Add a method in the BookDB class to insert a product into the database<br>
+* Refresh the customer/book lists when a new item is added to the database
